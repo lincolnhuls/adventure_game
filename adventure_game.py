@@ -17,14 +17,6 @@ import sys
 import time
 import os
 
-# Adding text deplay for the text 
-# def st.write(text, speed=0.03):
-#     message = st.empty()
-#     for i in range(len(text) + 1):
-     #    message.markdown(text[:i])
-     #    time.sleep(speed)
-
-# Creating the functions for the stories
 # Double quotes so that I can use don't
 st.write ("You groggily look around. You don't remember what happened or how you got here, but here you are.")
 st.write('In front of you lies three objects, a sword, a toy car, and what looks like a lazer gun. It is obvious that you are suppossed to pick one.')
@@ -32,7 +24,7 @@ st.write('In front of you lies three objects, a sword, a toy car, and what looks
 # Picking their story
 while True:
      incorrect_answer_0 = 0
-     story_choice = st.text_input('Which one will you choose?[Sword, Toy Car, Lazer Gun] ', key='option').strip().lower()
+     story_choice = st.text_input('Which one will you choose?[Sword, Toy Car, Lazer Gun] ', key='story_choice').strip().lower()
      if story_choice in ['sword', 'toy car', 'lazer gun']:
           break
      else:
@@ -553,24 +545,7 @@ else:
 
 
 
-# # Double quotes so that I can use don't
-# st.write ("You groggily look around. You don't remember what happened or how you got here, but here you are.")
-# st.write('In front of you lies three objects, a sword, a toy car, and what looks like a lazer gun. It is obvious that you are suppossed to pick one.')
 
-# # Picking their story
-# while True:
-#      story_choice = st.text_input('Which one will you choose?[Sword, Toy Car, Lazer Gun] ', key='option0').strip().lower()
-#      if story_choice in ['sword', 'toy car', 'lazer gun']:
-#           break
-#      else:
-#           st.write('Invalid choice, please enter Sword, Toy Car, or Lazer Gun.')
-
-# if story_choice.lower() == 'sword':
-#      the_knight()
-# elif story_choice.lower() == 'toy car':
-#      the_getaway()
-# else:
-#      space_walk()
 
 
 
